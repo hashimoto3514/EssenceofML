@@ -3,7 +3,7 @@ import numpy as np
 
 
 def f(x, y):
-    return x**2 + y**2 / 4
+    return x**2 + y**2/4
 
 
 x = np.linspace(-5, 5, 300)
