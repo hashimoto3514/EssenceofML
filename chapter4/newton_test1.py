@@ -32,7 +32,7 @@ xmesh, ymesh = np.meshgrid(x, y)
 z1 = f1(xmesh, ymesh)
 z2 = f2(xmesh, ymesh)
 plt.contour(xmesh, ymesh, z1, colors="k", levels=[0])
-plt.contour(xmesh, ymesh, z2, colors="K", levels=[0])
+plt.contour(xmesh, ymesh, z2, colors="r", levels=[0])
 solver = newton.Newton(f, df)
 
 initials = [np.array([1, 1]),
