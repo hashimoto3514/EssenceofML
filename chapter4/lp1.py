@@ -7,4 +7,4 @@ h = np.array([1700, 1400, 1000], np.float64)
 sol = optimize.linprog(c, A_ub=G, b_ub=h, bounds=(0, None))
 
 print(sol.x)
-print(sol.fun)
+print(round(sol.fun))
