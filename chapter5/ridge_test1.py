@@ -8,7 +8,8 @@ y = np.array([1, 3, 3, 5, 4])
 model = ridge.RidgeRegression(1.)
 model.fit(x, y)
 b, a = model.w_
-
+print(b,a)
+plt.ylim([0,6])
 plt.scatter(x, y, color="k")
 xmax = x.max()
 plt.plot([0, xmax], [b, b + a * xmax], color="k")

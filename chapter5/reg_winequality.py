@@ -4,7 +4,7 @@ import csv
 
 # データ読み込み
 Xy = []
-with open("winequality-red.csv") as fp:
+with open("C:\essenceofML\chapter5\winequality-red.csv") as fp:
     for row in csv.reader(fp, delimiter=";"):
         Xy.append(row)
 Xy = np.array(Xy[1:], dtype=np.float64)
@@ -16,7 +16,6 @@ train_X = Xy[:-1000, :-1]
 train_y = Xy[:-1000, -1]
 test_X = Xy[-1000:, :-1]
 test_y = Xy[-1000:, -1]
-
 # 学習させる
 model = linearreg.LinearRegression()
 model.fit(train_X, train_y)
