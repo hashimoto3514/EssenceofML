@@ -11,7 +11,7 @@ class KMeans:
     def fit(self, X):
         cycle = itertools.cycle(range(self.n_clusters))
         self.labels_ = np.fromiter(
-            itertools.islice(cycle, X.shape[0]), dtype=np.int)
+            itertools.islice(cycle, X.shape[0]), dtype=int)
         self.random_state.shuffle(self.labels_)
         labels_prev = np.zeros(X.shape[0])
         count = 0

@@ -5,7 +5,7 @@ import numpy as np
 n_test = 100
 X = []
 y = []
-with open("wdbc.data") as fp:
+with open("C:\essenceofML\chapter5\wdbc.data") as fp:
     for row in csv.reader(fp):
         if row[1] == "B":
             y.append(0)

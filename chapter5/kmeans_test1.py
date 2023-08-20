@@ -18,4 +18,5 @@ for i in range(3):
     p = points[model.labels_ == i, :]
     plt.scatter(p[:, 0], p[:, 1], color="k", marker=markers[i])
 
+print(model.cluster_centers_,model.n_clusters)
 plt.show()

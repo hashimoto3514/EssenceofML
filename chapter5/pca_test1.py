@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import csv
 import pca
-
+import numpy as np
 
 # データ読み込み
 Xy = []
-with open("winequality-red.csv") as fp:
+with open("C:\essenceofML\chapter5\winequality-red.csv") as fp:
     for row in csv.reader(fp, delimiter=";"):
         Xy.append(row)
 Xy = np.array(Xy[1:], dtype=np.float64)
